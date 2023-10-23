@@ -11,6 +11,7 @@
 
 <body>
     <header>
+        <!-- barra de navegação do site -->
         <nav>
             <a href="#sobre-mim">Sobre mim</a>
             <a href="#formacao">Formação Educacional</a>
@@ -22,58 +23,57 @@
     <main>
         <section class="section" id="sobre-mim">
             <h2>Sobre mim</h2>
+            <!--Link sobre mim com descrição e imagem -->
             <div class="section-container">
                 <div>
                     <img src="imagens/eu2.jpg" alt="minha foto">
                 </div>
                 <div>
-                    <p>
-                        Meu nome é Raiane Isabela Bryk, tenho 24 anos e vou contar um pouco sobre mim. <br>
-                        Atualmente trabalho em um petshop, trabalho com uma das coisas que mais amo na minha vida:
-                        cachorrinhos! <br>
-                        Tenho um cachorrinho de 1 ano e 6 meses chamado Afonso, meu amor eterno! <br>
-                        Gosto de ouvir músicas e atualmente um dos meus hoobies favoritos é fazer musculação na
-                        academia. <br>
-                        Tenho muitos planos para o futuro e estou trabalhando para tudo dar certo!
-                    </p>
+                    <p>Meu nome é Raiane Isabela Bryk, tenho 24 anos e vou contar um pouco sobre mim.</p>
+                    <p>Trabalho em um petshop, trabalho com uma das coisas que mais amo na minha vida:
+                        cachorrinhos!</p>
+                    <p>Tenho um cachorrinho de 1 ano e 6 meses chamado Afonso, meu amor eterno!</p>
+                    <p>Gosto de ouvir músicas e atualmente um dos meus hoobies favoritos é fazer musculação na
+                        academia.</p>
+                    <p>Tenho muitos planos para o futuro e estou trabalhando para tudo dar certo!</p>
+                    <p>Escolhi estudar a área de programação web por achar interessante depois de ver algumas aulas no
+                        youtube sobre JavaScript, resolvi pesquisar mais e acabei me matriculando no curso de Análise e
+                        Desenvolvimento de Sistemas.</p>
                 </div>
             </div>
         </section>
 
         <section class="section" id="formacao">
             <h2>Formação Educacional</h2>
-            <div class="section-container">
-                <p>
-                    Em 2017 me formei no Ensino Médio no Colégio SESI-PR <br>
-                    Fiz alguns cursos sobre Cooperativismo e Master Mind Teen enquanto ainda estava na escola. <br>
-                    Atualmente estou cursando Análise e Desenvolvimento de Sistemas no Centro Universitário Uninter.
-                    <br>
-                    E também estou buscando aprender inglês fazendo alguns cursos e estudando por conta própria!
-                </p>
-                <p>
-                    De 2018 a 2020 trabalhei como Atendente na loja Divine Chocolateria
-                </p>
+            <!-- Link formação educacional com descrição -->
+            <div class="descricao">
+                <p>Em 2017 me formei no Ensino Médio no Colégio SESI-PR</p>
+                <p>Fiz alguns cursos sobre Cooperativismo e Master Mind Teen enquanto ainda estava na escola.</p>
+                <p>Atualmente estou cursando Análise e Desenvolvimento de Sistemas no Centro Universitário Uninter.</p>
+                <p>E também estou buscando aprender inglês fazendo alguns cursos e estudando por conta própria!</p>
+                <p>De 2018 à 2020 trabalhei como Atendente na loja Divine Chocolateria.</p>
+                <p>Hoje trabalho em um petshop, porém futuramente quero iniciar na área de desenvolvimento web.</p>
             </div>
         </section>
 
         <section class="section" id="portifolio">
             <h2>Portifólio</h2>
+            <!-- Link portifólio com link externo de um trabalho feito com aulas do youtube -->
             <div class="section-container">
-                <a href="https://muda-tema-js.vercel.app/" target="_blank">
-                    <div class="card">
-                        <h3>Mudar Tema</h3>
-                        <p>Um projeto básico feito em JavaScript que altera o tema conforme o horário da sua máquina.
-                        </p>
-                    </div>
+                <a href="https://muda-tema-js.vercel.app/" target="_blank" class="card">
+                    <h3>Mudar Tema</h3>
+                    <p>Um projeto básico feito em JavaScript que altera o tema conforme o horário da sua máquina.
+                    </p>
                 </a>
             </div>
         </section>
 
         <section class="section" id="contato">
             <h2>Contato</h2>
-            <form action="" method="post">
+            <!-- Formulário para contato -->
+            <form onsubmit="event.preventDefault();">
                 <label for="">Nome: </label>
-                <input type="text" name="nome" placeholder="Digite seu nome" size="30" maxlength="50">
+                <input id="nome" name="nome" placeholder="Digite seu nome" size="30" maxlength="50">
                 <br><br>
                 <label for="">Email: </label>
                 <input type="email" name="email" id="email" placeholder="usuario@email.com" size="30">
@@ -82,14 +82,12 @@
                 <textarea name="mensagem" id="mensagem" cols="30" rows="10"
                     placeholder="Digite sua maensagem"></textarea>
                 <br><br>
-                <input type="submit" value="Enviar" id="submit">
+                <input type="button" value="Enviar" id="submit">
             </form>
         </section>
     </main>
 
-    <footer>
-
-    </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>

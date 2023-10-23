@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-:root {
+:root { 
     --branco: #fff;
     --nude: #f7f1e1;
-    --rosa-claro: #ffdbd7;
+    --rosa-claro: #ffdbd7;      /* Para facilitar a troca de cores futuramente */
     --rosa-medio: #ffb2c1;
     --rosa-escuro: #ce7095;
     --roxo: #855e6e;
@@ -11,13 +11,13 @@
 
 }
 
-body {
+body { /* Cor de fundo e fonte do corpo do documento*/
     background-color: var(--rosa-claro);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
 
-nav {
+nav { /* Cor de fundo, tamanho da fonte e alinhamento da barra de navegação */
     background-color: var(--rosa-escuro);
     font-size: 22px;
     height: 100px;
@@ -26,14 +26,14 @@ nav {
     justify-content: center;
 }
 
-nav a {
+nav a { /* Fonte, decoração e espaços dos links */
     color: var(--branco);
     font-weight: bold;
     text-decoration: none;
     padding: 15px;
 }
 
-main {
+main { /* Cor de fundo, bordas, sombras e alinhamento do main */
     background-color: var(--branco);
     border-radius: 10px;
     box-shadow: 5px 5px 18px var(--rosa-escuro);
@@ -41,41 +41,43 @@ main {
     margin: 0 auto;
 }
 
-.section {
+.section { /* Alinhamento e o mínimo do tamanho de cada link */
     padding: 15px;
     min-height: 500px;
 
 }
 
-.section-container {
+.section-container { /* Alinhamwento de imagem e texto juntos */
     display: flex;
     
 }
 
-.section-container p {
-    padding-top: 50px;
+.section-container p { /* Espaços, alinhamento e tamanho da fonte dos parágrafos */
+    padding-top: 15px;
     padding-left: 40px;
     text-align: justify;
     font-size: 1.3rem;
 }
 
 
-#sobre-mim img {
+#sobre-mim img { /* Alinhamento e borda da imagem */
+    margin-left: 15px;
     border-radius: 20px;
 }
 
-h2 {
+h2 { /* Alinhamento, fonte e margem dos títulos */
     text-align: center;
     font-weight: bold;
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-size: 23px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-#contato {
+#contato { /* cor de fundo */
     background-color: var(--nude);
 }
 
-form {
+form { /* bordas, sombras e alinhamento do formulário */
     border-radius: 10px;
     box-shadow: 5px 5px 18px #cecece;
     width: 450px;
@@ -83,49 +85,59 @@ form {
     margin: 0 auto;
 }
 
-form input, textarea {
+form input, textarea { /* Tamanho e bordas dos textos do formulário */
     height: 25px;
     border-radius: 5px;
     border-color: #cecece;
 }
 
-form label {
+form label { /* Espaço entre a mensagem e campo */
     margin-bottom: 2px;
 }
 
-textarea {
+textarea { /* Margem e tamanho do campo */
     margin-top: 5px;
     height: 220px;
     width: 400px;
 }
 
-#submit {
+#submit { /* Tamanho e fonte do botão enviar */
     width: 150px;
     height: 30px;
     font-size: 1.2rem;
 }
 
-#formacao {
+#formacao { /* Cor de fundo */
     background-color: var(--nude);
 }
 
-.card {
+.descricao { /* Espaços e alinhamento da descrição de formação */
+    padding-top: 15px;
+    padding-left: 40px;
+    line-height: 1.8;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.card { /* Tamanho, borda, margem, descoração do link */
     width: 300px;
     height: 300px;
     border: 1px solid #cecece;
     margin: 0 auto;
-    margin-top: 40px;
+    text-decoration: none;
+    color: var(--preto);
 }
 
-.card h3 {
+.card h3 { /* Fonte e alinhamento do texto do link */
     font-weight: bold;
     font-size: 1.2rem;
     text-align: center;
     margin-top: 40px;
 }
 
-.card p {
+.card p { /* Fonte, alinhamento e espaços do parágrafo do link */
     font-size: 1rem;
     text-align: center;
     padding-right: 40px;
+    margin-top: 40px;
 }
