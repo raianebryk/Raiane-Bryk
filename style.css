@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+:root {
+    --branco: #fff;
+    --nude: #f7f1e1;
+    --rosa-claro: #ffdbd7;
+    --rosa-medio: #ffb2c1;
+    --rosa-escuro: #ce7095;
+    --roxo: #855e6e;
+    --preto: #000;
+
+}
+
+body {
+    background-color: var(--rosa-claro);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+nav {
+    background-color: var(--rosa-escuro);
+    font-size: 22px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    color: var(--branco);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+}
+
+main {
+    background-color: var(--branco);
+    border-radius: 10px;
+    box-shadow: 5px 5px 18px var(--rosa-escuro);
+    width: 70%;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 15px;
+    min-height: 500px;
+
+}
+
+.section-container {
+    display: flex;
+    
+}
+
+.section-container p {
+    padding-top: 50px;
+    padding-left: 40px;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+
+#sobre-mim img {
+    border-radius: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#contato {
+    background-color: var(--nude);
+}
+
+form {
+    border-radius: 10px;
+    box-shadow: 5px 5px 18px #cecece;
+    width: 450px;
+    padding: 18px;
+    margin: 0 auto;
+}
+
+form input, textarea {
+    height: 25px;
+    border-radius: 5px;
+    border-color: #cecece;
+}
+
+form label {
+    margin-bottom: 2px;
+}
+
+textarea {
+    margin-top: 5px;
+    height: 220px;
+    width: 400px;
+}
+
+#submit {
+    width: 150px;
+    height: 30px;
+    font-size: 1.2rem;
+}
+
+#formacao {
+    background-color: var(--nude);
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #cecece;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.card h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.card p {
+    font-size: 1rem;
+    text-align: center;
+    padding-right: 40px;
+}
